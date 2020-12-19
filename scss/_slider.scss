@@ -1,0 +1,41 @@
+.slider {
+    min-height: 100vh!important;
+    
+    &__heading {
+        font-family: 'Montserrat', sans-serif;
+        color:$blue2;
+        font-weight: bold;   
+
+    }
+    &__text {
+        font-size: 22px;
+    }
+    &__check {
+        // font-family: 'Langar', cursive!important;
+    }
+    &__btn a{
+        padding: 15px 45px;
+        background-color: $light-blue;
+        border:1px solid $light-blue!important;
+        box-shadow: 0px 0px 15px rgba(0,0,0,.3);
+        color:$white;
+        cursor: pointer;
+        transition: all .6s;
+
+        &:hover{
+            
+            background: transparent;
+            transform: scale(1.05);
+            color:$black;
+        }
+    }
+}
+
+.animate__animated.animate__zoomIn {
+    --animate-duration: 3s;
+
+  }
+.animate__animated.animate__slideInLeft {
+    --animate-duration: 2s;
+
+  }
