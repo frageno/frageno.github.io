@@ -16,10 +16,21 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/4c901afbcb.js" crossorigin="anonymous"></script>
+    
+    
 </head>
 <body>
+    <!-- Scroll to top-->
+  <div class="btn-container">
+    <button id="scrollToTop">
+        <i class="fas fa-chevron-up text-white"></i>
+    </button>
+    </div>
+  <!-- End of Scroll to top-->
     <!-- HEADER  -->
-    <div class="container-fluid bg-light sticky-top header p-3 animate__animated animate__slideInDown">
+    <div class="container-fluid sticky-top header p-3 animate__animated animate__slideInDown">
     <div class="container">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -34,13 +45,13 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav">
                  <li class="nav-item header__active mx-3">
-                      <a class="nav-link header__nav-link" href="#">Strona główna</a>
+                      <a class="nav-link header__nav-link" href="#home">Strona główna</a>
                  </li>
                 <li class="nav-item mx-3">
-                     <a class="nav-link header__nav-link" href="#">O mnie</a>
+                     <a class="nav-link header__nav-link" href="#about">O mnie</a>
                 </li>
                 <li class="nav-item mx-3">
-                     <a class="nav-link header__nav-link" href="#">Technologie</a>
+                     <a class="nav-link header__nav-link" href="#tech">Technologie</a>
                 </li>
                 <li class="nav-item mx-3">
                     <a class="nav-link header__nav-link" href="#">Moje prace</a>
@@ -56,38 +67,118 @@
     </div>
     <!-- END OF HEADER  -->
     <!-- SLIDER -->
-    <div class="container py-5 slider">
+    <div class="container py-5 slider" id="home">
         <div class="row py-0 py-lg-5">
             <div class="col-12 text-center py-0 py-lg-5">
                 <h1 class="slider__heading animate__animated animate__slideInLeft">Tworzenie i projektowanie stron internetowych</h1>
                 <p class="slider__text animate__animated animate__slideInLeft">Rozmawiam, analizuje, projektuje i tworze strony od podstaw specialnie dla Ciebie!</p>
                 
-                <div class="text-center py-5 animate__animated animate__zoomIn animate__delay-1s">
+                <div class="text-center pt-5 mt-5 animate__animated animate__zoomIn animate__delay-1s">
                     <img src="img/me.png" alt="me" class="img-fluid">
                 </div>
 
-                <h3 class="pb-5 slider__check animate__animated animate__zoomIn animate__delay-1s">Sprawdź moje ostatnie projekty</h3>
+                <h3 class="py-5 py-3 slider__check animate__animated animate__zoomIn animate__delay-1s">Sprawdź moje ostatnie projekty</h3>
                 <button class="slider__btn animate__animated animate__zoomIn animate__delay-1s"><a href="#">Zobacz</a></button>
             </div>
         </div>
     </div>
     <!-- END OF SLIDER -->
     <!-- ABOUT  -->
-    <div class="container-fluid about py-5">
-        
+    <section>
+    <div class="container-fluid about py-5" id="about">
+            <div class="container">
             <div class="row">
-                <div class="col-12 text-center">
-                    <h1>Pare słów o mnie</h1>
-                    <p>Cześć nazywam się Szymon, frontendem zacząłem interesować się już w szkole</p>
+                <div class="col-12 text-right">
+                    <h1 class="about__heading">Pare słów o mnie</h1>
+                    <div class="d-flex justify-content-end">
+                        <div class="about__border"></div>
+                    </div>
+                    
+                    <p class="py-4 about__text text-center">Cześć nazywam się Szymon, frontendem zacząłem interesować się już w szkole 
+                       Obecnie działam w tym już około 3 lata, ciągle staram się rozwijać i poznawać nowe technologię 
+                       Mam w swoim dorobku mam już pare skończonych projektów, lecz ciągle pracuje nad tym żeby stawał się on coraz większy.
+                    </p>
+                    
                 </div>
             </div>
+            </div>
+            
         
     </div>
+    </section>
     <!-- END OF ABOUT  -->
-    
+    <!-- TECHNOLOGIE  -->
+    <section>
+    <div class="container py-5" id="tech">
+        <div class="row">
+            <div class="col-12 ">
+                <h1 class="about__heading">Technologie</h1>
+                <div class="about__border"></div>
+                <p class="py-3 pb-5 about__text">Wszystkie technologie w których pracuję</p>
+            </div>
+        </div>
+        <div class="row pt-5">
+            <div class="col-lg-4 text-center">
+                <div class="tech__con">
+                <i class="fab fa-html5 fa-5x tech__icon pb-2"></i>
+                <h4>HTML5</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est minus inventore ratione.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center py-lg-0 py-3">
+                <div class="tech__con">
+                <i class="fab fa-css3-alt fa-5x tech__icon pb-2"></i>
+                <h4>CSS3</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est minus inventore ratione.</p>
+                </div>
+
+            </div>
+            <div class="col-lg-4 text-center">
+                <div class="tech__con">
+                <i class="fab fa-js fa-5x tech__icon pb-2"></i>
+                <h4>JavaScript</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est minus inventore ratione.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="row py-5">
+            <div class="col-lg-4 text-center">
+                <div class="tech__con">
+                    <i class="fab fa-figma fa-5x tech__icon pb-2"></i>
+                <h4>FIGMA</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est minus inventore ratione.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center py-lg-0 py-3">
+                <div class="tech__con">
+                    <i class="fab fa-sass fa-5x tech__icon pb-2"></i>
+                <h4>SASS</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est minus inventore ratione.</p>
+                </div>
+
+            </div>
+            <div class="col-lg-4 text-center">
+                <div class="tech__con">
+                    <i class="fab fa-bootstrap fa-5x tech__icon pb-2"></i>
+                <h4>BOOTSTRAP</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est minus inventore ratione.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- END OF TECHNOLOGIE  -->
     <!-- BOOTSTRAP -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- SCRIPT -->
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>

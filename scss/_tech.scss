@@ -1,0 +1,18 @@
+.tech {
+    &__con{
+        background: $white;
+        width: 100%;
+        padding: 20px 0;
+        height: auto;
+        box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+        transition:transform .6s;
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+    &__icon {
+        color:$blue2;
+        
+    }
+    
+}
