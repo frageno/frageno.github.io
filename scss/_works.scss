@@ -1,0 +1,63 @@
+.works {
+    min-height: 100vh;
+    background: $white;
+
+
+    &__box{
+        position: relative;
+        width: 100%;
+        border:2px solid rgb(226, 226, 226);
+        transition: .6s!important;
+        box-shadow: 5px 5px 15px rgba(0,0,0,.4);
+
+        a {
+            color:$white!important;
+        }
+
+
+        
+        
+        
+    }
+    &__hover{
+        width: 100%;
+        background: $blue2;
+        opacity: .7;
+        min-height: 38vh;
+        position: absolute;
+        top:0;
+        left:0;
+        display: none;
+        transition: display .6s;
+        justify-content: center;
+        align-items: center;
+        color:$white;
+        transition: .6s!important;
+        
+
+        
+    }
+}
+
+.works__box:hover .works__hover{
+    display:flex;
+    
+    
+    // animation: move .4s ease;
+    
+
+    
+    
+}
+
+@keyframes move {
+    0%{
+        
+        transform: translateX(-50px);
+    }
+    100%{
+        
+        transform: translateX(0px);
+
+    }
+}

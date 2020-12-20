@@ -9,7 +9,7 @@ scrollToTop.addEventListener('click', function (){
 
 $(window).scroll(()=>{
     let position = $(this).scrollTop();
-    console.log(position);
+    
 
     if(position >=250){
         $('#about').addClass('left');
@@ -18,11 +18,11 @@ $(window).scroll(()=>{
         $('#about').removeClass('left');
 
     }
-    if(position >= 850){
-        $('#tech').addClass('left');
+    if(position >= 900){
+        $('#tech').addClass('right');
     }
     else {
-        $('#tech').removeClass('left');
+        $('#tech').removeClass('right');
 
     }
 })
