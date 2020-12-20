@@ -1,0 +1,86 @@
+.contact {
+    min-height: 100vh;
+    position: relative;
+
+    &__group {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+
+        input,textarea,button {
+            border:1px solid $gray!important;
+            padding: 15px;
+        }
+        input:focus,textarea:focus {
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.3)!important;
+        }
+    }
+    &__btn {
+        background: $blue2;
+        padding: 15px;
+        color:$white!important;
+        text-align: center;
+        cursor: pointer;
+        transition: .6s;
+        display: inline-block;
+        &:hover{
+            background: transparent;
+            border:1px solid $blue2!important;
+            color:$black!important;
+            
+        }
+    }
+    &__error{
+        input{
+            border:1px solid red!important;
+        }
+        
+        label {
+            display: block;
+        }
+
+    }
+    &__green{
+        input {
+        border:1px solid green!important;
+        }
+        label{
+            display: none;
+        }
+
+    }
+    &__label{
+        color:red;
+        display: none;
+    }
+    &__info {
+        
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        min-height: 150px;
+        line-height: 150px;
+        background: $blue2;
+        color:$white;
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        display: none;
+        box-shadow: 5px 5px 15px rgba(0,0,0,.4);
+        transition: .6s;
+    }
+    &__times {
+        position: absolute;
+        top:-40%;
+        right:5px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    &__show {
+        display: flex;
+        
+    }
+     
+    }
+    

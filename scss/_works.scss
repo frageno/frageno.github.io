@@ -9,6 +9,7 @@
         border:2px solid rgb(226, 226, 226);
         transition: .6s!important;
         box-shadow: 5px 5px 15px rgba(0,0,0,.4);
+        
 
         a {
             color:$white!important;
@@ -19,11 +20,14 @@
         
         
     }
+    &__text{
+        font-size:48px;
+    }
     &__hover{
         width: 100%;
         background: $blue2;
-        opacity: .7;
-        min-height: 38vh;
+        opacity: .6;
+        height: 100%;
         position: absolute;
         top:0;
         left:0;
@@ -32,7 +36,8 @@
         justify-content: center;
         align-items: center;
         color:$white;
-        transition: .6s!important;
+        
+        
         
 
         

@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cześć nazywam się Szymon, frontendem zacząłem interesować się już w szkole 
+    Obecnie działam w tym już około 3 lata, ciągle staram się rozwijać i poznawać nowe technologię">
     <title>Moje portfolio</title>
     <!-- STYLES -->
     <link rel="stylesheet" href="style.min.css">
@@ -18,6 +20,8 @@
     />
     <!-- FONTAWESOME -->
     <script src="https://kit.fontawesome.com/4c901afbcb.js" crossorigin="anonymous"></script>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
     
     
 </head>
@@ -35,7 +39,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
              <a class="navbar-brand" href="index.html">
-                  <img src="img/Slice 2.png" alt="logo" class="img-fluid">
+                  <img src="img/Slice 2-min.png" alt="logo" class="img-fluid">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                  <div class="header__bar"></div>
@@ -57,7 +61,7 @@
                     <a class="nav-link header__nav-link" href="#works">Moje prace</a>
                 </li>
                 <li class="nav-item mx-3">
-                     <a class="nav-link header__nav-link" href="#">Kontakt</a>
+                     <a class="nav-link header__nav-link" href="#contact">Kontakt</a>
                 </li>
             </ul>
             </div> 
@@ -74,7 +78,7 @@
                 <p class="slider__text animate__animated animate__slideInLeft">Rozmawiam, analizuje, projektuje i tworze strony od podstaw specialnie dla Ciebie!</p>
                 
                 <div class="text-center pt-5 mt-5 animate__animated animate__zoomIn animate__delay-1s">
-                    <img src="img/me.png" alt="me" class="img-fluid">
+                    <img src="img/me-min.png" alt="me" class="img-fluid">
                 </div>
 
                 <h3 class="py-5 py-3 slider__check animate__animated animate__zoomIn animate__delay-1s">Sprawdź moje ostatnie projekty</h3>
@@ -89,7 +93,7 @@
             <div class="container">
             <div class="row">
                 <div class="col-12 text-right">
-                    <h1 class="about__heading">Pare słów o mnie</h1>
+                    <h2 class="about__heading">Pare słów o mnie</h2>
                     <div class="d-flex justify-content-end">
                         <div class="about__border"></div>
                     </div>
@@ -112,7 +116,7 @@
     <div class="container py-5" id="tech">
         <div class="row">
             <div class="col-12 py-5">
-                <h1 class="about__heading">Technologie</h1>
+                <h2 class="about__heading">Technologie</h2>
                 <div class="about__border"></div>
                 <p class="py-3 pb-5 about__text">Wszystkie technologie w których pracuję</p>
             </div>
@@ -171,37 +175,90 @@
     </section>
     <!-- END OF TECHNOLOGIE  -->
     <!-- PRACE  -->
+    <section>
     <div class="container-fluid works py-5" id="works">
         <div class="container">
             <div class="row">
                 <div class="col text-right py-5">
-                    <h1 class="about__heading">Moje ostatnie prace</h1>
+                    <h2 class="about__heading">Moje ostatnie prace</h2>
                     <div class="d-flex justify-content-end">
                         <div class="about__border"></div>
                     </div>
-                    <p class="py-4 about__text text-right">Spradź moje prace na githubie!
+                    <p class="py-4 about__text text-right">Spradź moje prace w akcji!
                      </p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-6">
                     <div class="works__box">
-                        <img src="img/mockup.jpg" class="img-fluid">
+                        <img src="img/mockup-min.jpg" class="img-fluid">
                         <div class="works__hover">
-                            <h4><a href="https://github.com/frageno/LittleGym">LittleGym</a></h4>
+                            <h3 class="works__text"><a href="https://github.com/frageno/LittleGym">LittleGym</a></h3>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="works__box">
-                        <img src="img/mockup.jpg" class="img-fluid">
-                        <div class="works__hover"></div>
+                        <img src="img/mockup2-min.jpg" class="img-fluid">
+                        <div class="works__hover">
+                            <h3 class="works__text"><a href="https://barber-site.netlify.app">Barber</a></h3>
+
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    </section>
     <!-- END OF PRACE  -->
+    <!-- CONTACT -->
+    <section>
+    <div class="container contact py-5" id="contact">
+        <div class="row">
+            <div class="col-12 py-5">
+                <h2 class="about__heading">Kontakt</h2>
+                <div class="about__border"></div>
+                <p class="py-3 pb-5 about__text">Chcesz nawiązać współprace? Skontaktuj się ze mna!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <form class="mx-auto">
+                    <div class="contact__group">
+                        <label for="name" class="contact__label">To pole nie może być puste</label>
+                        <input type="text" placeholder="Imię">
+                    </div>
+                    <div class="contact__group">
+                        <label for="surname" class="contact__label">To pole nie może być puste</label>
+                        <input type="text" placeholder="Nazwisko">
+                    </div>
+                    <div class="contact__group mail-group">
+                        <label for="email" class="contact__label">To pole nie może być puste</label>
+                        <input type="email" placeholder="Adres Email" id="mail">
+                    </div>
+                    <div class="contact__group">
+                        
+                        <textarea name="message" id="" cols="25" rows="10" placeholder="Wiadomość"></textarea>
+                    </div>
+                    <div class="contact__group">
+                        
+                        <a class="contact__btn">Wyślij</a>
+                    </div>
+
+                </form>
+                
+            </div>
+        </div>
+        <div class="contact__info">
+            <h3>Wysłano maila!</h3>
+            <span class="contact__times">&times;</span>
+        </div>
+        
+    </div>
+    
+    </section>
+    
+    <!-- END OF CONTACT -->
     <!-- BOOTSTRAP -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
